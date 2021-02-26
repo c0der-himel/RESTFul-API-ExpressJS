@@ -27,9 +27,7 @@ app.get('/api/courses', (req, res) => {
 });
 
 app.get('/api/courses/:id', (req, res) => {
-    const course = courses.find(
-        (item) => item.id === parseInt(req.params.id, 10),
-    );
+    const course = courses.find((item) => item.id === parseInt(req.params.id, 10));
     if (!course) {
         return res.status(404).send('Not Found');
     }
@@ -50,9 +48,7 @@ app.post('/api/courses', (req, res) => {
 });
 
 app.put('/api/courses/:id', (req, res) => {
-    const course = courses.find(
-        (item) => item.id === parseInt(req.params.id, 10),
-    );
+    const course = courses.find((item) => item.id === parseInt(req.params.id, 10));
     if (!course) {
         return res.status(404).send('Not Found');
     }
@@ -65,9 +61,7 @@ app.put('/api/courses/:id', (req, res) => {
 });
 
 app.delete('/api/courses/:id', (req, res) => {
-    const course = courses.find(
-        (item) => item.id === parseInt(req.params.id, 10),
-    );
+    const course = courses.find((item) => item.id === parseInt(req.params.id, 10));
     if (!course) {
         return res.status(404).send('Not Found');
     }

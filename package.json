@@ -1,0 +1,25 @@
+{
+    "name": "RESTFul-API-ExpressJS",
+    "version": "1.0.0",
+    "description": "RESTFul Services using ExpressJS",
+    "main": "app.js",
+    "repository": "https://github.com/c0der-himel/RESTFul-API-ExpressJS.git",
+    "author": "himel <himel777hussain@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb-base": "14.2.1",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.3.1",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.2.1"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "joi": "^17.4.0"
+    },
+    "scripts": {
+        "start": "nodemon"
+    }
+}
